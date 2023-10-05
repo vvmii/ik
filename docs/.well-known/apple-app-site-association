@@ -9,7 +9,7 @@
 	"appIDs": [ "48F99JQ3FB.com.fnz.ikpop" ],
         "appID": "48F99JQ3FB.com.fnz.ikpop",
 
-        "paths": ["*"]
+        "paths": ["*"],
  "components": [
                {
                   "#": "no_universal_links",
