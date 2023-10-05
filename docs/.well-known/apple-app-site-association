@@ -1,10 +1,36 @@
 {
+ "webcredentials": {
+      "apps": [ "48F99JQ3FB.com.fnz.ikpop" ]
+   },
   "applinks": {
       "apps": [],
       "details": [
       {
+	"appIDs": [ "48F99JQ3FB.com.fnz.ikpop" ],
         "appID": "48F99JQ3FB.com.fnz.ikpop",
+
         "paths": ["*"]
+ "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": “/artist/*”,
+                  "comment": "Matches any URL with a path that starts with /buy/."
+               },
+               {
+                  "/": "/help/website/*",
+                  "exclude": true,
+                  "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": “/join/*”,
+                  "?": { “id”: "????" },
+                  "comment": "Matches any URL with a path that starts with /join/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+               }
+             ]
       }
     ]
   }
